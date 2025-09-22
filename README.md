@@ -11,7 +11,8 @@ print("\n---Resumo da Compra:---\n")
 
 total = 0
 for item in compras:
-    total += item["quantidade"]
+    total += item["quantidade"] * item["preco"]
 
 print(f"Total de itens: {len(compras)}")
+print(f"Preço total: R$ {total:.2f}")
   
